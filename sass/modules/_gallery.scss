@@ -1,0 +1,32 @@
+
+.container {
+    background-image: url(../images/bcgrnd_6.svg);
+    background-repeat: no-repeat;
+    background-position: center;
+
+}
+.gallery {
+    display: grid;
+    grid-template-rows: 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-gap: 10px;
+    margin-top: 10px;
+  }
+
+  .pat1, .pat2, .pat3, .pat4, .pat5, .pat6 {
+    background-image: url(../images/pf1.png);
+    height: 200px;
+    background-repeat: no-repeat;
+    background-position: center;
+    text-align: center;
+    
+  }
+
+
+  .titlePort {
+    font-family: 'Marcellus', serif;
+    font-size: 30px;
+    text-align: center;
+    color: white;
+    margin-top: -50px;
+}
+

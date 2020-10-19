@@ -1,0 +1,50 @@
+
+  
+  .contactForm{
+    display: flex;
+    flex-direction: column;
+    
+    text-align: center;
+    margin-top: 20px;
+  }
+  
+  
+  input[value=""]{
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    width: 375px;
+    padding: 4px 18px 4px 18px;
+    color: #fff;
+    font-size: 17px;
+    font-family: 'Marcellus', serif;
+  }
+  textarea{
+    width: 375px;
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 0px;
+    font-family: 'Marcellus', serif;
+    font-size: 17px;
+    color:#fff;
+  
+
+    
+  }
+  .subm{
+    background: none;
+    border: 1px solid #fff;
+    border-radius: 20px;
+    font-family: 'Marcellus', serif;
+    font-size: 17px;
+    color:#fff;
+    padding: 12px 20px 12px 20px;
+  }
+  .white::placeholder{
+    color: #fff;
+     
+  }
+
+
+  
+  

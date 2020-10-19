@@ -1,0 +1,28 @@
+.navHeader{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    height: 200px;
+
+  }
+.logo {
+    width: 150px;
+    margin-top: 10px;
+}
+
+  #crossbar {
+    animation: start 2s; 
+}
+
+@keyframes start {
+    0% {
+      opacity: 0;
+    }
+  
+    100% {
+      opacity: 1;
+    }
+  }
+
+  
+
