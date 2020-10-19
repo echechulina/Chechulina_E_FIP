@@ -1,6 +1,9 @@
 {
     "websiteName": "Elena Chechulina",
-    "position": "Junior Web Developer",
-    "info": "My name is Elena, I am a junior web developer and I believe that coding is definitely an art. All my interests are closely related to my development in this profession. I’m ready to experiment in web development and design."
+    "position_1": "Junior",
+    "position_2": "Web Developer",
+    "info_1": "My name is Elena, I am a junior web developer and I believe that coding is definitely an art.",
+    "info_2": "All my interests are closely related to my development in this profession.",
+    "info_3": "I’m ready to experiment in web development and design."
 
 }
