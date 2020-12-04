@@ -73,8 +73,7 @@ body {
 .bio-data {
     display: none;}
 .show-bio {
-    // display: block !important;
-   
+    display: block !important;
     display: flex;
     flex-direction: column;
     justify-content: center;

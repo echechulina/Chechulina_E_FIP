@@ -60,22 +60,23 @@
 
                 <!-- create gallery here -->
 
-                    <div class="gallery">
-
-                      <ul class="projectInfo">
-                        <!-- this is a custom Vue component defined in main.js -->
-                        <project-card @showmydata="showProjectData" v-for="project in projects" :project="project" :key="project.id"></project-card>
-            
-                    </ul>
+                <main id="app">
+                  <!-- <button @click="switchComponents">Switch!</button> -->
+                  <buttoncomponent v-for="project in mediaCollection" :project="project" :key="project.id" @setmediatype = "setComponent"></buttoncomponent>
+                <lightbox :project="currentProject" :mediatype="mediaType"></lightbox>
+          
+                  <!-- conditionally render a component using the generic component tag -->
+                  <component :is="activeComponent"></component>
+              </main>
             
                     <!-- show more section -->
                    
-                    <section class="bio-data" :class="{'show-bio' : showBioData}">
+                    <!-- <section class="bio-data" :class="{'show-bio' : showBioData}">
                         <img :src="'images/' + currentProjectData.image" alt="">
                         <h1>{{ currentProjectData.name }}</h1>
                         <p> {{ currentProjectData.description}}</p>
                         <p> {{ currentProjectData.url}}</p>
-                    </section>
+                    </section> -->
 
 
                     </div>

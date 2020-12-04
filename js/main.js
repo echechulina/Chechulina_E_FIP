@@ -1,6 +1,8 @@
 
 import { fetchData } from "./components/TheDataMiner.js";
-import ProjectCard from "./components/ThePortfolioProjects.js";
+
+// import lightboxComponent from "./components/TheLightboxComponent.js";
+import ButtonComponent from "./components/TheButtonComponent.js";
 
 (() =>{
 	
@@ -16,53 +18,41 @@ import ProjectCard from "./components/ThePortfolioProjects.js";
 
     button.addEventListener("click", hamburgerMenu);
 
-    let vue_vm = new Vue({
-        // link Vue to an element in our HTML
-        //el: "#app",
-
+    const myVM = new Vue({
         data: {
-            removeAformat: true,
-            showBioData: false,
-            projects: [],
-            currentProjectData: {} 
+            currentProject: {},
+            mediaType: "",
+            mediaCollection: []
+            // activeComponent: AudioComponent
         },
 
-        // this is the "mounted" lifecycle hook. Vue is done creating itself, and has attached itself to the "app" div on the page
         mounted: function() {
             console.log("Vue is mounted, trying a fetch for the initial data");
 
         fetchData("./includes/index.php")
         .then(data => {
-            data.forEach(project=> this.projects.push(project));
+            this.mediaCollection = data;
         })
         .catch(err => console.error(err));            
         },
 
-        
-
         methods: {
-            logClicked() {
-                console.log("clicked on a list item");
+           setComponent(project) {
+                // debugger;
+                this.mediaType = project.mediatype;
+                this.currentProject = project;
+
+                // document.querySelector('.lightbox').classList.add('show-lightbox');
+                // this.doSomethingElse();
             },
 
-           
-            showCarData(project) {
-
             
-                // remove this prof from the professors array
-                console.log('clicked to view prof bio data', project.name);
-                // the "this" keyword inside a vue instance REFERS to the Vue instance itself by default
-
-                // toggle the property between true and false using a ternary statement
-                this.showBioData = this.showBioData ? false : true;
-
-                // make the selected prof's data visible
-                this.currentProjectData = project;
-            },             
         },
 
         components: {
-            "project-card": ProjectCard
+            
+            "buttoncomponent": ButtonComponent,
+            // "lightboxcomponent": lightboxcomponent
         }
     }).$mount("#app"); // also connects Vue to your wrapper in HTML
 	
