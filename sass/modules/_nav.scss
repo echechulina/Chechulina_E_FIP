@@ -14,11 +14,6 @@
         transition: all 400ms ease;
     }
 
-    button.expanded {
-        -webkit-transform: rotate(90deg);
-        -ms-transform: rotate(90deg);
-        transform: rotate(90deg);
-    }
       
     li a {
         display: block;

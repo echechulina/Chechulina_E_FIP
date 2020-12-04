@@ -1,5 +1,5 @@
 body {
-    font: $main-font;
+    font-family: $main-font;
     
 
 }
@@ -12,14 +12,11 @@ body {
     background-image: url(../images/bcgrnd_5.png);
     background-repeat: no-repeat;
     background-position: center;
+    background-attachment: fixed;
 
 }
 
-.contactLeft {
- margin-top: 80px;
-    width: 15px;
-   
-}
+
 
 .shaman {
     display:none;
@@ -81,6 +78,8 @@ body {
     
 }
 
+
+
 .contactText {
     font-family: 'Marcellus', serif;
     font-size: 20px;
@@ -92,12 +91,8 @@ body {
 }
 
 .appeal {
-    font-size: 25px;
-    margin-top: -250px;
-
+    font-size: 20px;
+    margin-top: 30px;
     margin-right: 40px;
 }
 
-.email, .tel {
-    margin-top: 20px;
-}
