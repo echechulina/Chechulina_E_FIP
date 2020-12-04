@@ -13,17 +13,16 @@ body {
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
+    
 
 }
-
-
 
 .shaman {
     display:none;
 }
 
 .copy {
-    color: white;
+    color: black;
     text-align: right;
     font-size: 14px;
     margin-top: 50px;
@@ -70,29 +69,14 @@ body {
     margin-top: -250px;
 }
 
-.titleCont {
-    font-family: 'Marcellus', serif;
-    font-size: 30px;
-    text-align: center;
-    color: white;
-    
+
+.bio-data {
+    display: none;}
+.show-bio {
+    // display: block !important;
+   
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
 }
-
-
-
-.contactText {
-    font-family: 'Marcellus', serif;
-    font-size: 20px;
-    text-align: left;
-    color: white;
-    margin-left: 40px;
-
-    
-}
-
-.appeal {
-    font-size: 20px;
-    margin-top: 30px;
-    margin-right: 40px;
-}
-

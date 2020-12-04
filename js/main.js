@@ -1,4 +1,6 @@
-import { SendMail } from "./components/mailer.js";
+
+import { fetchData } from "./components/TheDataMiner.js";
+import ProjectCard from "./components/ThePortfolioProjects.js";
 
 (() =>{
 	
@@ -14,38 +16,55 @@ import { SendMail } from "./components/mailer.js";
 
     button.addEventListener("click", hamburgerMenu);
 
-	
-	let mailSubmit = document.querySelector('.submit-wrapper');
+    let vue_vm = new Vue({
+        // link Vue to an element in our HTML
+        //el: "#app",
 
-    function processMailFailure(result) {
-        // show a failure message in the UI
-        console.table(result); // table shows us an object in table form
-        alert(result.message);
+        data: {
+            removeAformat: true,
+            showBioData: false,
+            projects: [],
+            currentProjectData: {} 
+        },
 
-        // show some UI here to let the user know the mail attempt was successful
-    }
+        // this is the "mounted" lifecycle hook. Vue is done creating itself, and has attached itself to the "app" div on the page
+        mounted: function() {
+            console.log("Vue is mounted, trying a fetch for the initial data");
 
-    function processMailSuccess(result) {
-        // show a success message in the UI
-        console.table(result); // table shows us an object in table form
-        alert(result.message);
+        fetchData("./includes/index.php")
+        .then(data => {
+            data.forEach(project=> this.projects.push(project));
+        })
+        .catch(err => console.error(err));            
+        },
 
-        // show some UI here to let the user know the mail attempt was successful
-    }
+        
 
-    function processMail(event) {
-        // block the default submit behaviour
-        event.preventDefault();
+        methods: {
+            logClicked() {
+                console.log("clicked on a list item");
+            },
 
-        // use the SendMail component to try to process mail
-        SendMail(this.parentNode)
-            .then(data => processMailSuccess(data))
-            .catch(err => processMailFailure(err));
+           
+            showCarData(project) {
 
-            // the error handler in the catch block could actually be a generic catch-and-display function that handles EVERY error you might encounter during runtime. Might be a better strategy to pass in a flag or just a message and have the function display it in the UI
-    }
+            
+                // remove this prof from the professors array
+                console.log('clicked to view prof bio data', project.name);
+                // the "this" keyword inside a vue instance REFERS to the Vue instance itself by default
 
-    mailSubmit.addEventListener("click", processMail);
+                // toggle the property between true and false using a ternary statement
+                this.showBioData = this.showBioData ? false : true;
+
+                // make the selected prof's data visible
+                this.currentProjectData = project;
+            },             
+        },
+
+        components: {
+            "project-card": ProjectCard
+        }
+    }).$mount("#app"); // also connects Vue to your wrapper in HTML
 	
 
 })();
