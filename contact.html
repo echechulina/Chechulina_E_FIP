@@ -10,13 +10,14 @@
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
 </head>
 <body>
-    <div class="container">
+  <div class="container">
         <h1 class="hidden">Container</h1>
 
-        <header class="navHeader">
-
+          <header class="navHeader">
+            <!-- logo -->
             <div class="logo">
-				<svg id="logo_white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.04 51.66">
+
+				        <svg id="logo_white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.04 51.66">
                     <defs>
                       <style>
                         .cls-1 {
@@ -38,8 +39,8 @@
                     </g>
                   </svg>
                        
-			</div>
-
+			      </div>
+            <!-- burger menu -->
             <nav id="mainNav">
             <button id="button"></button>
             <section id="burgerCon">
@@ -61,55 +62,47 @@
                 <div class="infoCont">
                     <div class="contactLeft">
                         <img src="images/contact_white.svg" alt="contact">
-                    </div>
-                  <article class="contactText">
-                    <h2 class="hidden">appeal</h2>
-                    <p class="appeal"></p>
-                    <p class="email"></p>
-                    <p class="tel"></p>
-                    <p class="address"></p>
-                    <p class="zip"></p>
-                    <p class="city"></p>
-                  </article>
-                </div>
+                        <!-- general info -->
+                      </div>
+                        <article class="contactText">
+                          <h2 class="hidden">appeal</h2>
+                          <p class="appeal">If you need a convenient website for the development of your business, or you want to contact me, you can use the contact form.</p>
+                       
+                          <p class="London, On, Canada"></p>
+                        </article>
+                      </div>
+
+                <!-- contact form -->
           
                 <div class="contactForm">
-                        <form id="name">
-                            <input class="white" type="text" value="" placeholder="Your name:">
-                        </form>
+                        <form action="./includes/mail/send.php" method="POST" id="mail-form">
+                          <label for="firstname">First Name</label>
+                          <input type="text" id="firstname" name="firstname" placeholder="First name" required class="white">
+                          
+                          <label for="lastname">Last name</label>
+                          <input type="text" id="lastname" name="lastname" placeholder="lastname" required class="white">
 
-                        <form id="name">
-                            <input class="white" type="text" value="" placeholder="Companie's name:">
-                        </form>
-                        
-                        <form id="telephone">
-                            <input class="white" type="text" placeholder="Tel:" value="">
-                        </form>
+                          <label for="email">Email</label>
+                          <input type="email" id="email" name="email" placeholder="Email" required class="white">
 
-                        <form id="email"> 
-                            <input class="white" type="email" placeholder="E-mail:" value="">
-                        </form>
+                          <label for="message">Message</label>
+                          <textarea name="message" id="message" cols="30" rows="10"></textarea><br/>
 
-                        <form id="comm"></form>
-                        <textarea rows="4" cols="40" name="comment" class="white" placeholder="Comment:"></textarea>
+                          <div class="submit-wrapper">
+                            <span class="submit">Submit</span>
+                            <i class="fas fa-paper-plane"></i>
+                        </div>
                         </form>
-
-                        <div>
-                        <button class="subm" type="button" name="button">SUBMIT</button>
-                            </div>
-                </div>
-              
-                
+                      </div>
             </div>
         </main>
-
+                    <!-- footer -->
         <footer class="mainFooter">
             <section class="copyrights">
                 <h3 class="copy">Copyright © 2020 Elena Chechulina </h3> 
             </section>
         </footer>
-    </div> 
-    <script type="module" src="js/main.js"></script>
-    <script type="module" src="js/contact.js"></script>
+  </div> 
+  <script type="module" src="js/main.js"></script>
 </body>
 </html>
