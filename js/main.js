@@ -1,7 +1,7 @@
 
 import { fetchData } from "./components/TheDataMiner.js";
 
-// import lightboxComponent from "./components/TheLightboxComponent.js";
+import lightboxComponent from "./components/TheLightboxComponent.js";
 import ButtonComponent from "./components/TheButtonComponent.js";
 
 (() =>{
@@ -23,7 +23,7 @@ import ButtonComponent from "./components/TheButtonComponent.js";
             currentProject: {},
             mediaType: "",
             mediaCollection: []
-            // activeComponent: AudioComponent
+          
         },
 
         mounted: function() {
@@ -42,8 +42,8 @@ import ButtonComponent from "./components/TheButtonComponent.js";
                 this.mediaType = project.mediatype;
                 this.currentProject = project;
 
-                // document.querySelector('.lightbox').classList.add('show-lightbox');
-                // this.doSomethingElse();
+                document.querySelector('.lightbox').classList.add('show-lightbox');
+                
             },
 
             
@@ -52,7 +52,7 @@ import ButtonComponent from "./components/TheButtonComponent.js";
         components: {
             
             "buttoncomponent": ButtonComponent,
-            // "lightboxcomponent": lightboxcomponent
+            "lightbox": lightboxComponent
         }
     }).$mount("#app"); // also connects Vue to your wrapper in HTML
 	

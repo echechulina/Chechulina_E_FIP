@@ -63,11 +63,9 @@
                 <main id="app">
                   <!-- <button @click="switchComponents">Switch!</button> -->
                   <buttoncomponent v-for="project in mediaCollection" :project="project" :key="project.id" @setmediatype = "setComponent"></buttoncomponent>
-                <lightbox :project="currentProject" :mediatype="mediaType"></lightbox>
-          
-                  <!-- conditionally render a component using the generic component tag -->
-                  <component :is="activeComponent"></component>
-              </main>
+                  
+                  <lightbox :project="currentProject" :mediatype="mediaType"></lightbox>
+                </main>
             
                     <!-- show more section -->
                    

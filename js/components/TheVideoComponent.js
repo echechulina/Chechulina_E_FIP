@@ -1,12 +1,13 @@
 export default {
     name: "VideoComponent",
 
+    props:["work"],
+
     template: `
          <section class="video-player">
             <i class="fas fa-film media-icon"></i></i><h1>This is the video component</h1>
-            <video src="" controls></video>
-            <h3>Video Title</h3>
-            <h3>Video Release Date</h3>
-            <p>video description here...</p>
+            <video :src="'video/' = work.source" controls></video>
+            <h1>{{work.name}}</h1>
+            <p>{{work.description}}</p>
         </section>`
 }
