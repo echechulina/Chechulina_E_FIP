@@ -7,19 +7,25 @@ body {
 .hidden {
     display: none;
 }
+.container_index {
+    background-image: url(../images/bcgrnd.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    background-size: cover;
+
+}
+
 
 .container {
     background-image: url(../images/bcgrnd_5.png);
     background-repeat: no-repeat;
     background-position: center;
     background-attachment: fixed;
-    
 
 }
 
-.magician {
-    display: none;
-}
+
 
 .copy {
     color: white;
@@ -29,6 +35,7 @@ body {
     // margin-top: -240px;
    
 }
+
 
 
 .myName {
@@ -62,5 +69,5 @@ body {
 }
 
 #media {
-    width: 3%;
+    width: 13px;
 }

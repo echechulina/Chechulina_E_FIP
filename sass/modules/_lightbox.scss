@@ -4,7 +4,9 @@
     top: 0;
     bottom: 0;
     width: 100%;
-    background-color: rgba(69, 123, 157);
+    height: 1670px;
+    
+    background-color: rgba(69, 123, 157, 0.9);
     z-index: 200;
     
     span {
@@ -18,3 +20,36 @@
     display: block;
 }
 
+.lb-close {
+    position: absolute;
+    padding: 20px;
+    font-size: 40px;
+    cursor: pointer;
+}
+
+.comp-lb {
+        display: flex;
+        flex-direction: column;
+        padding: 20%;
+        align-items: center;
+      
+}
+
+
+.image_pr {
+    align-items: center;
+}
+
+
+.presentation_pr {
+    margin-top: 20px;
+    line-height:1.5;
+    
+}
+
+.project_name{
+    font-size: 25px;
+}
+.project_info, .project_url{
+    margin-top: 10px;
+}

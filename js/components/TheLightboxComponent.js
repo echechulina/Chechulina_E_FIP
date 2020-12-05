@@ -9,7 +9,7 @@ export default {
     template: `
     <section class="lightbox">
     <span class="lb-close" @click="closelb">x</span>
-    <component :is="currentComponent" :work="project"></component>
+    <component :is="currentComponent" :work="project" class="comp-lb"></component>
     </section>
     `,
 
