@@ -9,7 +9,6 @@ export default {
     template: `
     <section class="lightbox">
     <span class="lb-close" @click="closelb">x</span>
-    <h2>Type of work: {{mediatype}}</h2>
     <component :is="currentComponent" :work="project"></component>
     </section>
     `,

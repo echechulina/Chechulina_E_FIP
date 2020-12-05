@@ -5,7 +5,7 @@ export default {
 
     template: `
         <section class="image-player">
-            <i class="fas fa-image media-icon"></i><h1>{{work.name}}</h1>
+            <i class="fas fa-image media-icon"></i>
             <img :src="'images/' + work.source" controls alt='portfolio image'>
             <article>
                 <h1>{{work.name}}</h1>

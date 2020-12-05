@@ -1,36 +1,38 @@
+
 #mainNav {
     display: flex;
     flex-direction: column;
     margin-bottom: 20px;
-    margin-top: 20px;
-    margin-right: 10px;
-
-    button { 
-        margin-left: auto; 
-        background: url(../images/menu.svg) center no-repeat;
-        border: 0px;
-        width: 50px;
-        height: 30px;
-        transition: all 400ms ease;
+    
+    button { margin-left: auto; 
+     background: url(../images/menu.svg) center no-repeat;
+    border: 0px;
+    width: 20px;
+    height: 20px;
+    transition: all 400ms ease;
     }
 
+    button.expanded {
+        -webkit-transform: rotate(90deg);
+        -ms-transform: rotate(90deg);
       
+        transform: rotate(90deg);
+    }
+
     li a {
         display: block;
-        color: white;
         padding: 10px 0;
         text-align: center;
-        text-decoration: none;
-        font-size: 20px;
     }
+    li:last-child { margin-bottom: 10px; }
+    li:hover { background-color: #efefef; }
 
+  
   }
   
-  #burgerCon { 
-      display: none; 
-      margin-top: 20px; 
-}
+   /* push the button to the right hand side of the screen */
+
+  #burgerCon { display: none; margin-top: 20px; }
   #burgerCon.slideToggle { display: block; }
+
   
- 
- 

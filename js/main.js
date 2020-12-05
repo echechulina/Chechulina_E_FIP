@@ -5,18 +5,18 @@ import lightboxComponent from "./components/TheLightboxComponent.js";
 import ButtonComponent from "./components/TheButtonComponent.js";
 
 (() =>{
-	
-	console.log("fired");
-
-	let button = document.querySelector("#button");
-	 burgerCon = document.querySelector("#burgerCon");
+    
+    
+    
+	let button = document.querySelector("#button"),
+			burgerCon = document.querySelector("#burgerCon");
 
 	function hamburgerMenu() {
 		burgerCon.classList.toggle("slideToggle");
-
+		button.classList.toggle("expanded");
 	}
 
-    button.addEventListener("click", hamburgerMenu);
+	button.addEventListener("click", hamburgerMenu);
 
     const myVM = new Vue({
         data: {
@@ -42,8 +42,7 @@ import ButtonComponent from "./components/TheButtonComponent.js";
                 this.mediaType = project.mediatype;
                 this.currentProject = project;
 
-                document.querySelector('.lightbox').classList.add('show-lightbox');
-                
+                document.querySelector('.lightbox').classList.add('show-lightbox');    
             },
 
             
