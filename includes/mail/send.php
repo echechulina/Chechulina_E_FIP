@@ -47,10 +47,10 @@ $results['message'] = $visitor_message;
 
 // 2. Prepare the email [Prepare out the label and put on the package / prepare it in a certain format.]
 
-$email_recepient = 'chechulina.e@yahoo.com';
+$email_recepient = 'chechulinael@gmail.com';
 $email_subject = 'Inquiry from Portfolio Site';
 
-$email_message = sprintf('Name: %s, Email: %s, Topic: %s, Message: %s', $visitor_name, $visitor_email, $visitor_message);  
+$email_message = sprintf('Name: %s, Email: %s, Message: %s', $visitor_name, $visitor_email, $visitor_message);  
 
 $email_headers = array(
     // best practice, but it may need to you have a mail setup in noreply@yourdomain.ca
@@ -69,5 +69,6 @@ if($email_result) {
 }
 
 echo json_encode($results);
+
 
 ?>

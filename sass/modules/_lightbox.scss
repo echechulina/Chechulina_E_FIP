@@ -53,3 +53,27 @@
 .project_info, .project_url{
     margin-top: 10px;
 }
+
+.video-player{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+
+    .video{
+        width: 70%;
+    }
+
+    .video-title{
+        font-size: 25px;
+        margin-top: 20px;
+    }
+
+    .video-description{
+        margin-top: 20px;
+        line-height:1.5;
+    }
+    
+    
+}

@@ -6,8 +6,8 @@ export default {
     template: `
          <section class="video-player">
             <i class="fas fa-film media-icon"></i></i>
-            <video :src="'video/' + work.source" controls></video>
-            <h1>{{work.name}}</h1>
-            <p>{{work.description}}</p>
+            <video :src="'video/' + work.source" controls class="video"></video>
+            <h1 class="video-title">{{work.name}}</h1>
+            <p class="video-description">{{work.description}}</p>
         </section>`
 }

@@ -1,16 +1,24 @@
 
 # Portfolio Site of Elena Chechulina 
-Hello! On this site you can see my work, done as a web developer and designer. The portfolio is still under development. You can follow the process in the roadmap, that you can find in the files folder.
+This site is my first attempt to collect and present my work as a developer. Learning the code is difficult, but interesting. It's great to use new techniques! So far, not all ideas have been implemented, but I hope you enjoy it!
 
-# Notes:
-main.js doesn't work in Google Chrome yet, use Safary to access portfolio.
+# Objective: 
+To create a three-page website that will have a "portfolio" section, the data of which is called from the database. Create a contact form using php and mySQL.
 
-# Development tools:
-HTML;
-CSS;
-JS;
-SASS;
-AJAX.
+# Installation
+No particular installation required. Download repo and open in a code editor. 
+Content will require a Live Server to view properly.
+
+
+# Tools
+* HTML;
+* CSS;
+* SASS;
+* JS;
+* Vue.js;
+* AJAX;
+* PHP;
+* MySQL.
 
 # MIT License
 
