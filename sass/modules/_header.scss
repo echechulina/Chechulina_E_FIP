@@ -3,15 +3,17 @@
     flex-direction: row;
     justify-content: space-between;
     height: 200px;
+    padding-left: 20px;
+    padding-right: 20px;
 
   }
-.logo {
-    width: 150px;
+#logo_mini {
+    width: 40%;
     margin-top: 10px;
 }
 
   #crossbar {
-    animation: start 2s; 
+    animation: start 3s; 
 }
 
 @keyframes start {

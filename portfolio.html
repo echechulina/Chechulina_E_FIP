@@ -8,90 +8,65 @@
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/master.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
-</head>
+  </head>
 <body>
     <div class="container">
         <h1 class="hidden">Container</h1>
 
         <header class="navHeader">
-
             <div class="logo">
-				<svg id="logo_white" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.04 51.66">
-                    <defs>
-                      <style>
-                        .cls-1 {
-                          fill: #fff;
-                        }
-                      </style>
-                    </defs>
-                    <g id="left_bracket">
-                      <path class="cls-1" d="M10.14,2.15c2.16.08,4.31.16,6.46.21s4.29.07,6.42,0,4.26-.14,6.37-.36a42,42,0,0,0,6.18-1L37,.63,37,2.15c.12,4,.15,8,.23,12l.08,12-.08,12c-.08,4-.1,8-.23,12l0,1.44-1.35-.26A89.1,89.1,0,0,0,23,49.88q-3.19-.15-6.41-.06t-6.44.35c2.1-.51,4.23-.91,6.37-1.21s4.31-.49,6.48-.59A73,73,0,0,1,36,49l-1.39,1.18c-.12-4-.15-8-.23-12l-.07-12,.07-12c.08-4,.11-8,.24-12L36.1,3.31A51.2,51.2,0,0,1,23,3.89c-2.17-.17-4.32-.39-6.46-.68S12.26,2.56,10.14,2.15Z"/>
-                    </g>
-                    <g id="right_bracket">
-                      <path class="cls-1" d="M86.82,2.15c-2,.44-4.13.82-6.21,1.11s-4.2.5-6.31.64a57.55,57.55,0,0,1-12.76-.6L63,2.15c.13,4,.15,8,.24,12l.08,12-.07,12c-.08,4-.11,8-.23,12L61.54,49a57.43,57.43,0,0,1,13.08-.45c2.16.15,4.31.37,6.45.64s4.27.61,6.39,1L81,50c-2.15,0-4.29,0-6.42,0s-4.26.14-6.37.35a47.6,47.6,0,0,0-6.22.94l-1.39.31,0-1.49c-.12-4-.15-8-.23-12l-.07-12,.08-12c.08-4,.11-8,.24-12l0-1.46L62,1A65.92,65.92,0,0,0,74.28,2.42c2.08.08,4.16.06,6.26,0S84.72,2.27,86.82,2.15Z"/>
-                    </g>
-                    <g id="middle_angle">
-                      <path class="cls-1" d="M37,51.6c.8-3.3,1.73-6.55,2.63-9.81l2.81-9.73c.91-3.24,1.89-6.46,2.71-9.71s1.66-6.48,2.18-9.72L49.35,0l.95,12.77a57.4,57.4,0,0,0,1.76,9.7c.79,3.25,1.77,6.47,2.71,9.71l3,9.69c1,3.24,2,6.48,2.87,9.76-1.51-3-2.89-6.14-4.25-9.25s-2.63-6.27-3.81-9.46-2.26-6.42-3.24-9.72a56,56,0,0,1-2-10.23l3,.14a94.2,94.2,0,0,1-2.41,10c-1,3.25-2,6.48-3.22,9.66S42.27,39.12,41,42.26,38.41,48.52,37,51.6Z"/>
-                    </g>
-                    <g id="crossbar">
-                      <path class="cls-1" d="M0,29.93c8.07-.82,16.17-1.5,24.28-2s16.24-.66,24.38-.64a209.56,209.56,0,0,1,24.41,1.07,140.64,140.64,0,0,1,24,4.75l-.06.3c-8.11-.73-16.14-1.5-24.19-2.07S56.7,30,48.61,29.7s-16.18-.39-24.28-.26S8.12,29.8,0,30.23Z"/>
-                    </g>
-                  </svg>
-                       
-			</div>
+              <svg id="logo_mini" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 97.04 51.66">
+                <defs>
+                  <style>
+                    .cls-1 {
+                      fill: #fff;
+                    }
+                  </style>
+                </defs>
+                <g id="left_bracket">
+                  <path class="cls-1" d="M10.14,2.15c2.16.08,4.31.16,6.46.21s4.29.07,6.42,0,4.26-.14,6.37-.36a42,42,0,0,0,6.18-1L37,.63,37,2.15c.12,4,.15,8,.23,12l.08,12-.08,12c-.08,4-.1,8-.23,12l0,1.44-1.35-.26A89.1,89.1,0,0,0,23,49.88q-3.19-.15-6.41-.06t-6.44.35c2.1-.51,4.23-.91,6.37-1.21s4.31-.49,6.48-.59A73,73,0,0,1,36,49l-1.39,1.18c-.12-4-.15-8-.23-12l-.07-12,.07-12c.08-4,.11-8,.24-12L36.1,3.31A51.2,51.2,0,0,1,23,3.89c-2.17-.17-4.32-.39-6.46-.68S12.26,2.56,10.14,2.15Z"/>
+                </g>
+                <g id="right_bracket">
+                  <path class="cls-1" d="M86.82,2.15c-2,.44-4.13.82-6.21,1.11s-4.2.5-6.31.64a57.55,57.55,0,0,1-12.76-.6L63,2.15c.13,4,.15,8,.24,12l.08,12-.07,12c-.08,4-.11,8-.23,12L61.54,49a57.43,57.43,0,0,1,13.08-.45c2.16.15,4.31.37,6.45.64s4.27.61,6.39,1L81,50c-2.15,0-4.29,0-6.42,0s-4.26.14-6.37.35a47.6,47.6,0,0,0-6.22.94l-1.39.31,0-1.49c-.12-4-.15-8-.23-12l-.07-12,.08-12c.08-4,.11-8,.24-12l0-1.46L62,1A65.92,65.92,0,0,0,74.28,2.42c2.08.08,4.16.06,6.26,0S84.72,2.27,86.82,2.15Z"/>
+                </g>
+                <g id="middle_angle">
+                  <path class="cls-1" d="M37,51.6c.8-3.3,1.73-6.55,2.63-9.81l2.81-9.73c.91-3.24,1.89-6.46,2.71-9.71s1.66-6.48,2.18-9.72L49.35,0l.95,12.77a57.4,57.4,0,0,0,1.76,9.7c.79,3.25,1.77,6.47,2.71,9.71l3,9.69c1,3.24,2,6.48,2.87,9.76-1.51-3-2.89-6.14-4.25-9.25s-2.63-6.27-3.81-9.46-2.26-6.42-3.24-9.72a56,56,0,0,1-2-10.23l3,.14a94.2,94.2,0,0,1-2.41,10c-1,3.25-2,6.48-3.22,9.66S42.27,39.12,41,42.26,38.41,48.52,37,51.6Z"/>
+                </g>
+                <g id="crossbar">
+                  <path class="cls-1" d="M0,29.93c8.07-.82,16.17-1.5,24.28-2s16.24-.66,24.38-.64a209.56,209.56,0,0,1,24.41,1.07,140.64,140.64,0,0,1,24,4.75l-.06.3c-8.11-.73-16.14-1.5-24.19-2.07S56.7,30,48.61,29.7s-16.18-.39-24.28-.26S8.12,29.8,0,30.23Z"/>
+                </g>
+              </svg>
+                     
+			      </div>
 
             <nav id="mainNav">
-            <button id="button"></button>
-            <section id="burgerCon">
-                <h2 class="hidden">Main Navigation</h2>
-                        <ul class="burgerMenu">
-                            <li><a href="index.html">Info</a></li>
-                            <li><a href="portfolio.html">Portfolio</a></li>
-                            <li><a href="contact.html">Contact</a></li>
-                        </ul>
-            </section>
+              <h2 class="hidden">Main Navigation</h2>
+    
+              <button id="button"></button>
+    
+              <section id="burgerCon">
+                <ul id="burgerMenu">
+                  <li><a href="index.html">Info</a></li>
+                  <li><a href="portfolio.html">Portfolio</a></li>
+                  <li><a href="contact.html">Contact</a></li>
+                  </ul>
+               </section>
+                 
             </nav>
         </header>
 
-        <main>
+    
             <header class="content">
                 <h2 class="titlePort">Portfolio</h2>
             </header>
 
-               
-                    <!-- <div class="contactLeft">
-                        <img src="images/contact_white.svg" alt="contact">
-                    </div> -->
+                <!-- create gallery here -->
 
-                    <!-- create gallery here -->
-
-                    <div class="gallery">
-
-                      <div class="pat1">
-                        <button class="clicktoopen click">Click to open</button>
-                       </div>
-                       <div class="pat2">
-                        <button class="clicktoopen click">Click to open</button>
-                       </div>
-                       <div class="pat3">
-                        <button class="clicktoopen click">Click to open</button>
-                       </div>
-                       <div class="pat4">
-                        <button class="clicktoopen click">Click to open</button>
-                       </div>
-                       <div class="pat5">
-                        <button class="clicktoopen click">Click to open</button>
-                       </div>
-                       <div class="pat6">
-                        <button class="clicktoopen click">Click to open</button>
-                       </div>
-
-
-                    </div>
-                
-  
-            
-        </main>
+                <main id="app">
+                  <buttoncomponent v-for="project in mediaCollection" :project="project" :key="project.id" @setmediatype = "setComponent" class="gallery"></buttoncomponent>
+                  
+                  <lightbox :project="currentProject" :mediatype="mediaType"></lightbox>
+                </main>
 
         <footer class="mainFooter">
             <section class="copyrights">
@@ -99,6 +74,7 @@
             </section>
         </footer>
     </div> 
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>
 </html>
