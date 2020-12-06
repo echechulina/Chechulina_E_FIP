@@ -1,6 +1,8 @@
 
 # Portfolio Site of Elena Chechulina 
+
 This site is my first attempt to collect and present my work as a developer. Learning the code is difficult, but interesting. It's great to use new techniques! So far, not all ideas have been implemented, but I hope you enjoy it!
+
 
 # Objective: 
 To create a three-page website that will have a "portfolio" section, the data of which is called from the database. Create a contact form using php and mySQL.
