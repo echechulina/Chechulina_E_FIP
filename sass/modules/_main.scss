@@ -4,44 +4,58 @@ body {
 
 }
 
+
 .hidden {
     display: none;
 }
-
-
 
 .container {
     background-image: url(../images/bcgrnd_5.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    // background-attachment: fixed;
 
 }
 
-
+.container_portfolio 
+{
+    background-image: url(../images/bcgrnd_5.png);
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+}
 
 .copy {
     color: white;
-    text-align: right;
+    text-align: center;
     font-size: 14px;
-    margin-right: 10px;
-    // margin-top: -240px;
-   
+    margin-top: 20px;   
+}
+.copy_con {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;   
 }
 
-
+.copy_port {
+    color: white;
+    text-align: center;
+    font-size: 14px;
+    margin-top: 20px;   
+}
 
 .myName {
     font-size: 30px;
     text-align: center;
     margin-top: 10px;
-
 }
 
 .job_title_1, .job_title_2 {
-    font-size: 25px;
+    font-size: 30px;
     text-align: center;
 }
+
 .job_title_1
 {margin-top: 20px;}
 
@@ -52,15 +66,15 @@ body {
 
 .descrip_1, .descrip_2, .descrip_3 {
     font-size: 20px;
-    text-align: center;
-    margin-left: 40px;
-    margin-right: 40px;
+    text-align: justify;
+    margin-left: 45px;
+    margin-right: 45px;
 }
 
 .descrip_1{
     margin-top: 60px;
 }
 
-#media {
-    width: 13px;
+.descrip_2, .descrip_3 {
+    margin-top: 10px;
 }

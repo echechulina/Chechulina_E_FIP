@@ -1,13 +1,23 @@
-   .titlePort {
+.titlePort {
     font-size: 30px;
     text-align: center;
-    margin-top: -50px;
+    margin-top: 0px;
 }
 
-.gallery{
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    align-items: center;
-    margin-top:10px;
+#app{
+    margin-top: 50px;
+    display: grid;
+    grid-template-columns: 1fr ;
+    grid-template-rows: auto 1fr ;
+    justify-items: center;
+    grid-gap: 10px;
+
 }
+
+// .button-wrapper{
+   
+
+   
+ 
+   
+// }

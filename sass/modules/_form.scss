@@ -9,24 +9,29 @@
 input[type=text], input[type=email] {
     padding: 0.7em;
     color: white;
-    border: 1px solid #fff;
+    border: none;
+    border-bottom: 1px solid #fff;
     border-radius: 0px;
     width: 340px;
     background-color:  transparent;
     font-size: 17px;
     margin-top: 10px;
+    outline: none;
+    
   
 }
 
   textarea{
     resize: none;
-    width:360px;
+    height: 180px;
+    width:340px;
     background: none;
     border: 1px solid #fff;
     border-radius: 0px;
     font-size: 17px;
     color:#fff;
     margin-top:10px;
+    outline: none;
   }
  
   .white::placeholder{
@@ -36,7 +41,7 @@ input[type=text], input[type=email] {
 
   .submit-wrapper {
     display: inline-block;
-    margin-top: 5px;
+    margin-top: 0px;
     padding: 10px;
     border-radius: 0.5rem;
     border-color: white;

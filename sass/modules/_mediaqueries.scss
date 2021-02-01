@@ -1,32 +1,359 @@
 @media screen and (min-width: 48em){
-    .contact-wrap{ 
+    // info page
+   
+    #logo_mini {
+        height: 80px;
+    }
+
+    //nav part
+
+    #mainNav {
+        text-align: right;
+        // text-transform: uppercase;
+        font-size: 18px;
+        margin-left: auto;
+
+        button { display: none;}
+
+        li {
+            border-bottom: none;
+            display: inline;
+            margin-left: 20px;
+          }
+        
+        li a {
+            display: inline;
+            padding: 5px 0;
+            text-decoration: none;
+            color: #385165;
+        }
+    }
+    
+    #burgerCon {
         display: flex;
-        flex-direction: row;
+        flex-direction: column;
+        margin: 0;
+    }
+      
+    #burgerMenu {text-align: right;}
+
+
+
+    // header part
+    .myName {
+        font-size: 40px;
+        text-align: center;
+        margin-top: 40px;
+    }
+
+    .job_title_1
+    {margin-top: 30px;}
+
+    .job_title_1, .job_title_2 {
+        font-size: 30px;
+
+    }
+
+    // content part
+
+    .content {
+        display: grid;
+       grid-template-columns: 1fr 1fr;
+       margin-top:80px;
+       grid-gap: 40px;
+    }
+
+    .about_content{
+        width: 400px;
+        margin-top: 30px;  
+    }
+    
+    .descrip_1, .descrip_2, .descrip_3 {
+        font-size: 23px;
+        text-align: justify;
+    }
+
+    .descrip_2, .descrip_3 {
+        margin-top: 20px;
+    }
+   
+      
+    // shaman part
+    #shaman {
+        height: 460px;
+         display: block;
+    }
+
+    // media part
+
+    .media {
+        margin-top: 40px;
+        text-align: left;
+        margin-left:45px;
+    }
+
+
+    .copy {   
+        text-align: left;
+        margin-top: 10px; 
+        margin-left:45px;    
+    }
+
+   
+    
+
+    // contact page
+
+    .titleCont {
+        font-size: 40px;
+        margin-top: 40px;
+
+    }
+
+    .contact-wrap{ 
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        margin-top:140px;
+        grid-gap: 20px;
+    }
+
+    .contactForm {
+       margin-right: 40px;
+    }
+
+    .appeal1{
+        margin-top: 40px;
+    }
+    .appeal1, .appeal1_1, .appeal2, .appeal3 {
+        font-size: 23px;
+        margin-left: 45px;
+        text-align: left;
+    }
+
+    .appeal1_1 {
+        margin-top: 30px;  
+    }
+    .appeal2, .appeal3 {
+        margin-top: 20px; 
+    }
+
+    .app_content {
+        font-size: 22px;
+        margin-top: 10px; 
+    }
+
+    .app_content__container__list{
+        text-align: left;
+        margin-left: 45px; 
+        &__item {
+            span {
+            background-color:rgb(233, 107, 115, 0.8);
+          }
+          } 
+    }
+
+
+    .media_con {
+        margin-top: -120px;
+        text-align: left;
+        margin-left:45px;
+    }
+
+    .copy_con {   
+        text-align: left;
+        margin-top: 233px; 
+        margin-left:45px;    
+    }
+   
+
+     // portfolio page 
+     .gallery{
+        display: grid;
+         grid-template-columns: 1fr 1fr;
+         grid-gap: 15px;
+        }
+}   
+
+@media screen and (min-width: 64em){
+
+    .myName {
+        margin-top: -30px;
+    }
+
+    .content {
+       margin-top:10px;
+       grid-gap: 50px;
+    }
+
+    .about_content{
+        width: 550px;
+        margin-top: 105px; 
+     
+    }
+    .descrip_1, .descrip_2, .descrip_3 {
+       text-align: justify; 
+    }
+    
+    .descrip_2, .descrip_3 {
+        margin-top: 10px;
         
     }
 
-    .gallery{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        gap: 50px;
-        margin-top: 20px;
-       }
-       .media_cont{
-        display: flex;
+    // shaman part
+    #shaman {
+        height: 400px;
+        display: block;
+       margin-left: 100px;
+       
     }
+
+    .media {
+        margin-top: -14px;
+       
+    }
+
+        // contact page
+
+        .titleCont {
+            margin-top: 0px;
+    
+        }
+    
+        .contact-wrap{ 
+            margin-top:30px;
+        }
+    
+        .appeal1{
+            margin-top: 100px;
+        }
+
+        .appeal2, .appeal3 {
+            margin-top: 20px; 
+        }
+
+    
+        .media_con {
+            margin-top: -100px;
+        }
+    
+        .copy_con {   
+           
+            margin-top: 107px; 
+               
+        }
+
+        .button-wrapper{
+            display: flex;
+           flex-direction: row;
+        }
+
+}
+
+@media screen and (min-width: 80em){
 
     #logo_mini {
-        width: 40%;
+        height: 90px;
+    }
+
+    .myName {
+        margin-top: -80px;
+
+    }
+
+    .content {
+       margin-top:10px;
+       grid-gap: 50px;
+    }
+
+    .about_content{
+        width: 550px;
+        margin-top: 120px; 
+      
+     
+    }
+    .descrip_1, .descrip_2, .descrip_3 {
+       text-align: justify; 
+       margin-left: 100px;
+    }
+    
+    .descrip_2, .descrip_3 {
         margin-top: 10px;
+        
     }
 
-    .mainHeader{
-        margin-top:50px;
-    }    
-    .about_content {
-        margin-top:100px;
-        width:400px;
+    // shaman part
+    #shaman {
+        height: 420px;
+        display: block;
+       margin-left: 250px;
+       
+    }
+
+    .media {
+        margin-top: -40px;
+        margin-left: 100px;
+    }
+    .copy {   
+        margin-left:100px;    
+    }
+
+    // contact page
+
+    .titleCont {
+        margin-top: -60px;
 
     }
 
-    }    
+    .contact-wrap{ 
+        margin-top:70px;
+        grid-gap: 150px;
+    }
+
+    .contactForm {
+        margin-right: 100px;
+     }
+
+     textarea{
+        resize: none;
+        height: 160px;
+       
+      }
+
+      .appeal1{
+        margin-top: 80px;
+    }
+
+    .appeal1, .appeal1_1, .appeal2, .appeal3{
+        margin-left:100px; 
+    }
+
+    .appeal2, .appeal3 {
+        margin-top: 15px; 
+    }
+
+    .app_content {
+    
+        margin-top: 10px; 
+    }
+
+    .app_content__container__list{
+        text-align: left;
+        margin-left: 100px;  
+    }
+
+    .media_con {
+        margin-top: -100px;
+        margin-left:100px;  
+    }
+
+    .copy_con {   
+       
+        margin-top: 92px; 
+        margin-left:100px;  
+           
+    }
+
+
+
+
+}

@@ -1,0 +1,41 @@
+.media {
+    margin-top: 68px;
+    text-align: center;
+}
+
+.media_con {
+    margin-top: 68px;
+    text-align: center;
+}
+
+.media_port{
+    margin-top: 68px;
+    text-align: center;  
+}
+
+#linkedin, #github, #facebook, #instagram {
+    height: 40px;
+}
+
+#linkedin:hover {
+    circle {
+    fill: #385165;
+    
+}
+}
+#github:hover {
+    #underlayer {
+    fill: #385165;
+}
+}
+#facebook:hover {
+    #Path_1 {
+    fill: #385165;
+}
+}
+
+#instagram:hover {
+    #Path_5 {
+    fill: #385165;
+}
+}
