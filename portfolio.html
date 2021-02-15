@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -8,6 +9,7 @@
     <link href="css/reset.css" rel="stylesheet" type="text/css">
     <link href="css/master.css" rel="stylesheet" type="text/css">
     <link href="https://fonts.googleapis.com/css2?family=Marcellus&display=swap" rel="stylesheet">
+   
   </head>
 <body>
     <div class="container_portfolio">
@@ -53,22 +55,30 @@
                   <li><a href="contact.html">Contact</a></li>
                   </ul>
                </section>
+
+
                  
             </nav>
         </header>
 
     
-            <header class="content">
+            <header class="contentPort">
                 <h2 class="titlePort">Portfolio</h2>
             </header>
+
+            <section class="portIntro">
+              <h2 class="speach">I am glad to share with you some of my work as a developer, designer and artist. I would like to point out that for me coding is like an additional direction in the visual arts. A web developer uses various pieces of code and technologies to create a unique digital product for his client. I love design and have academic painting skills that I use in my work. You are one click away from viewing my projects! For more information click on the images.
+              </h2>
+            </section>
 
                 <!-- create gallery here -->
 
                 <main id="app">
-                  <buttoncomponent v-for="project in mediaCollection" :project="project" :key="project.id" @setmediatype = "setComponent" class="gallery"></buttoncomponent>
+                  <buttoncomponent v-for="project in mediaCollection" :project="project" :key="project.work_id" @setmediatype = "setComponent" class="gallery"></buttoncomponent>
                   
                   <lightbox :project="currentProject" :mediatype="mediaType"></lightbox>
                 </main>
+
 
                 <div class=media_port> 
 
@@ -125,12 +135,14 @@
   
                   </div>   
 
+
         <footer class="mainFooter">
             <section class="copyrights">
                 <h3 class="copy_port">Copyright © 2020 Elena Chechulina </h3> 
             </section>
         </footer>
     </div> 
+  
     <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
     <script type="module" src="js/main.js"></script>
 </body>

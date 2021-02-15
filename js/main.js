@@ -42,7 +42,9 @@ import ButtonComponent from "./components/TheButtonComponent.js";
                 this.mediaType = project.mediatype;
                 this.currentProject = project;
 
-                document.querySelector('.lightbox').classList.add('show-lightbox');    
+                document.querySelector('.lightbox').classList.add('show-lightbox');
+                
+                
             },
 
             
@@ -57,3 +59,6 @@ import ButtonComponent from "./components/TheButtonComponent.js";
 	
 
 })();
+
+
+

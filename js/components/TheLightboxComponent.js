@@ -28,6 +28,12 @@ export default {
         closelb() {
             // debugger;
             document.querySelector('.lightbox').classList.remove('show-lightbox');
+
+            
         }
+        
+
     }
 }
+
+

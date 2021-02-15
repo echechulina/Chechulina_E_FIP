@@ -10,26 +10,30 @@ body {
 }
 
 .container {
-    background-image: url(../images/bcgrnd_5.png);
+    background-image: url(../images/bcgrnd_1.png);
     background-repeat: no-repeat;
     background-position: center;
     // background-attachment: fixed;
+    background-size: cover;
+    
 
 }
 
 .container_portfolio 
 {
-    background-image: url(../images/bcgrnd_5.png);
+    background-image: url(../images/bcgrnd_1.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-attachment: fixed;
+    // background-attachment: fixed;
+    background-size: cover;
 }
+    
 
 .copy {
     color: white;
     text-align: center;
     font-size: 14px;
-    margin-top: 20px;   
+    margin-top: 40px;   
 }
 .copy_con {
     color: white;
@@ -62,6 +66,8 @@ body {
 .content {
   display: flex;
   flex-direction: column;
+//   height: 330px ;
+
 }
 
 .descrip_1, .descrip_2, .descrip_3 {
@@ -69,6 +75,7 @@ body {
     text-align: justify;
     margin-left: 45px;
     margin-right: 45px;
+    
 }
 
 .descrip_1{
@@ -77,4 +84,7 @@ body {
 
 .descrip_2, .descrip_3 {
     margin-top: 10px;
+}
+.mainFooter {
+    height:90px;
 }
